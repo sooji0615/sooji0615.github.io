@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css</title>
+        <meta charset="utf-8" />
+        <style>
+            body{ color:brown; }
+            #div1{ color:#1900ff; }
+            /* css의 주석 */            
+        </style>
+        <!-- html의 주석 -->
+    </head>
+    <body>
+        <div id="div1">상속과 겹침</div>
+        
+        <style>
+            div{ background-color: hsl(73, 100%, 84%);
+                border: solid 1px;}
+            #w1{
+                width: 200px;
+                height: 150px;
+                background-color: rgb(255, 0, 0);
+                
+            }
+        </style>
+        <div>default</div>
+        <div id="w1">width</div>
+        <style>
+            #p1{
+                padding: 20px;
+            }
+        </style>
+        <div id="p1"> padding </div>
+
+        <style>
+            #m1{
+                margin: 20px;
+            }
+        </style>
+        <div id="m1">margin</div>
+
+        <style>
+            *{ text-decoration: underline; }
+            strong{ /* element selector 요소 선택자 */
+                color: green;
+            }
+            em{
+                color: coral;
+            }
+        </style>
+        <strong>strong</strong>
+        <em>em</em>
+       
+        <style>
+            .cl{
+                color: rgb(255, 0, 255);
+            }
+            #dl{
+                color: #558000;
+            }
+        </style>
+        <div class="cl">class selector</div>
+        <div id="dl">id selector</div>
+
+        <style>
+            #f1:first-line{
+                color: palevioletred
+            }
+            #f1:first-letter{
+                font-size: 40px;
+            }
+            #f1::before{ content:"시작"; }
+            #f1::after{ content:"끝";} 
+        </style>
+        <div id="f1">first line, first letterfirst line, first letterfirst line, first letterfirst line, first letterfirst line,
+             first letterfirst line, first letterfirst line, first letterfirst line, first letterfirst line, first letterfirst line,
+              first letterfirst line, first letterfirst line, first letterfirst line, first letter
+        </div>
+
+        <style>
+            #d2 div:first-child{
+                color:#43b600;
+            }
+            #d2 div:nth-child(2){
+                color:#558000;
+            }
+            #d2 div:last-child{
+                color:aqua;
+            }
+        </style>
+        <div id="d2">
+            <div>first child</div>
+            <div>middle child</div>
+            <div>last child</div>
+        </div>
+        <style>
+            /* :link, :visited. :hover, :active, :focus */
+            a:link{ color:red; }/*링크가 있을때*/
+            a:visited{ color:green; }/*방문한 후*/
+            a:hover{ color:blue; }/*마우스를 올리면*/
+            a:active{ color: blueviolet; }/*클릭하면*/
+            a:focus{ color: darksalmon; }/*포커스 되면*/
+            a{ text-decoration: none;}
+        </style>
+
+        <a href="https://www.naver.com/"target="_blank" title="Naver">네이버</a>
+
+        <style>
+            #d3>span{ /*자식 요소 선택자*/
+                font-size: 50px;
+            }
+            #d3 span{ /*하위 요소 선택자*/
+                text-decoration: line-through;
+            }
+            #d3>div>span{
+                background-color: #678fff;
+            }
+        </style>
+        <div id="d3">
+            <span>span1</span>
+            <div>
+                <span>span2</span>
+            </div>
+        </div>
+
+        <style>
+            /* widtn, height, margin, border, padding */
+            #d4{
+                width: 200px;
+                height: 200px;
+                border: solid 2px black;
+                border-left:solid 2px  red;
+                border-right: solid 3px blue;
+                border-top: solid 4px yellow;
+                border-bottom: solid 5px green;
+
+                margin: 100px;
+                margin: 50px 100px; /*상하 좌우*/
+                margin: 50px 100px 150px 200px; /*상 우 하 좌*/
+                /* 위부터 시계방향 */
+                margin-left: 50px;
+                margin-right: 100px;
+                margin-top: 150px;
+                margin-bottom: 200px;
+
+                padding: 100px;
+                padding: 50px 100px; /*상하 좌우*/
+                padding: 50px 100px 150px 200px; /*상 우 하 좌*/
+                /* 위부터 시계방향 */
+                padding-left: 50px;
+                padding-right: 100px;
+                padding-top: 150px;
+                padding-bottom: 200px;
+            }
+        </style>
+        <div id="d4">div4</div>
+
+        <style>
+            #d5{
+                position: absolute; /* 절대적인 */
+                left: 130px;
+                top: 130px;
+            }
+            #d6{
+                position:relative;
+                /*relative 부모는 absolute 자식의 기준이 된다 */
+            }
+        </style>
+        <div id="d6">
+            <div id="d5">absolute</div>
+        </div>
+
+        <style>
+            #d7{
+                position: fixed;
+                top: 0px;
+                right: 0px;
+            }
+        </style>
+        <div id="d7">top right</div>
+
+        <style>
+            #d8{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+        </style>
+
+        <div id="d8">font family</div>
+
+        <style>
+            #d9{
+                text-align: center;
+            }
+        </style>
+
+        <div id="d9">center</div>
+
+        <style>
+            #d10{
+                letter-spacing: 50px;
+                line-height: 40px;
+            }
+        </style>
+
+        <div id=d10>letter spacing letter spacing letter spacing letter spacing letter spacing letter spacing letter spacing 
+            letter spacing letter spacing letter spacing letter spacing letter spacing letter spacing letter spacing </div>
+            
+        <style>
+            #d11{
+                white-space:pre;
+            }
+        </style>
+        <div id="d11">
+            a  b  c
+            d  f
+        </div>
+
+        <style>
+            ul{
+                list-style-type: decimal;
+            }
+            ol{
+                list-style-type: lower-alpha;
+            }
+        </style>
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+        </ul>
+
+        <ol>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+        </ol>
+
+        <style>
+            #d12{
+                min-width: 200px;
+                max-width: 800px;
+                border-radius: 10px;
+                text-shadow: 2px 2px 1px blueviolet;
+            }
+        </style>
+        <div id="d12">min width</div>
+
+        <style>
+            #d13{
+                background-color: rebeccapurple;
+                border-radius: 0px;
+                text-shadow: 0px 0px 0px black;
+                transition: background-color 1s;
+                border-radius 1s, text-shadow 1s;
+            }
+            #d13:hover{
+                background-color: blue;
+                border-radius: 20px
+                text-shadow 2px 2px 2px black;
+            }
+        </style>
+
+<style>
+        #d14{}
+        #d14: hover{
+         animation-name: d14_animation;
+         animation-duration: 2s;
+        }
+          @keyframes d14_animation{
+    0%{background-color: white;}
+    50%{background-color: red;}
+    50%{background-color: green;}
+          }
+        </style>
+        <div id="d13">transition</div>
+        
+<style>
+    col1{
+    columns: 100px 3;
+    /*최소 넓이, 최대 단수*/
+    }
+</style>
+  <div class="col1">
+  1절 - 동해물과 백두산이 마르고 닳도록
+  하느님이 보우하사 우리나라만세
+  무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세
+  
+  2절 - 남산위에 저 소나무 철갑을 두른듯
+  바람서리 불변함은 우리기상 일세
+  무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세
+  
+  3절 - 가을하늘 공활한데 높고 구름없이 
+  밝은달은 우리가슴 일편단심일세
+  무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세
+  
+  4절 - 이 기상과 이 맘으로 충성을 다하여
+  괴로우나 즐거우나 나라사랑하세
+  무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세
+  </div>    
+
+</style>
+
+    </body>
+</html>
