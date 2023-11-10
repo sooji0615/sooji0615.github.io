@@ -250,29 +250,30 @@
                 background-color: rebeccapurple;
                 border-radius: 0px;
                 text-shadow: 0px 0px 0px black;
-                transition: background-color 1s;
+                transition: background-color 1s,
                 border-radius 1s, text-shadow 1s;
             }
             #d13:hover{
                 background-color: blue;
-                border-radius: 20px
-                text-shadow 2px 2px 2px black;
+                border-radius: 20px;
+                text-shadow: 2px 2px 2px black; 
             }
         </style>
+         <div id="d13">transition</div>
 
 <style>
         #d14{}
-        #d14: hover{
+        #d14:hover{
          animation-name: d14_animation;
          animation-duration: 2s;
         }
           @keyframes d14_animation{
-    0%{background-color: white;}
+     0%{background-color: white;}
     50%{background-color: red;}
     50%{background-color: green;}
           }
         </style>
-        <div id="d13">transition</div>
+         <div id="d14">animation</div>
         
 <style>
     col1{
@@ -297,8 +298,31 @@
   괴로우나 즐거우나 나라사랑하세
   무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세
   </div>    
-
+  <style>
+    #d15{
+        display:flex;
+        /*표시방식 : 유연하게*/
+    }
+    #d15>div:nth-child(1){ flex:2; }
+    #d15>div:nth-child(2){ flex:5; }
+    #d15>div:nth-child(3){ flex:8; }
 </style>
-
+    <div id="d15"> 
+        <div>child1</div> 
+        <div>child2</div> 
+        <div>child3</div> 
+    </div>
+    <style>
+        #d16{
+            display:flex;
+            justify-content:space-around;
+        }
+        </style>
+     <div id="d16"> 
+        <div>child1</div> 
+        <div>child2</div> 
+        <div>child3</div>
+       
+    </style>
     </body>
 </html>
