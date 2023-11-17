@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>layout2</title>
+    <meta charset="utf-8" />
+    <style>
+        header{
+            display: flex;
+        } 
+        header ul{
+            list-style: none; /*리스트 모양 : 없음*/
+            display: flex; /*내용을 가로배치 유연하게(flex)*/
+            padding: 0px;
+        }
+        header li{
+        padding: 0px 10px;
+        justify-content: space-between;
+        background-color: rgb(73, 109, 187);
+        color: white
+        }
+        header h1{
+            margin:4px;
+        }
+        header h1 span{
+            color:rgb(86, 125, 171);
+        }
+        #main_visual{
+         background-image: url("main.png");
+         padding: 150px;
+         text-align: center;
+         color:white;
+         background-size: 100px auto;
+         background-repeat: no-repeat;
+         background-color: black;
+         background-size:contain; /*담기도록*/
+         background-size:cover; /*씌우도록*/
+         background-position: 50% 100%; /*배경 위치*/
+        }
+        #main_visual p{
+            font-size: 20px;
+        }
+        #main_visual h2{
+            font-size: 50px;
+            letter-spacing: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+    <header>
+        <h1>MY<span>FOLIO</span></h1>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT ME</li>
+            <li>SERVICES</li>
+            <li>MY WORK</li>
+            <li>CONTECT ME</li>
+        </ul>
+    </header>
+    <div id="main_visual">
+        <p>Lorem ipsum dolor sit iusmod tempor</p>
+        <h2>incididunt bore</h2>
+        <p>Orem ipsum dolor sit amet, consectetur</p>
+        <img src="">
+        </div>
+    <section>
+        <h3>ABOUT ME</h3>
+        <p>
+            adadafafafafgdhtrdsghrmtregrwgrehtrjyh
+            tewtrhetryjjtehwt4wt4rethrytewt4hetrynhytet4wwehtr
+        </p>
+        <ul>
+            <li></li>
+        </ul>
+    </section>
+    <section> content2</section>
+    </div>
+</body>
+</html>
